@@ -12,6 +12,8 @@ This project is a full-stack application that connects to a user's Gmail account
 - 📄 **PDF Text Extraction** – Uses `pdf-parse` to extract text from standard PDFs.
 - 🔍 **OCR Fallback with Tesseract.js** – Handles image-only scanned invoices.
 - 🧠 **Google Gemini 1.5 Pro** – Parses invoice text into structured JSON.
+- 🧠 **Ollama mistral** – Parses invoice text into structured JSON.
+
 - ☁️ **Firestore Integration** – Stores parsed invoice data per user for frontend display.
 - 🛡️ **Robust Error Handling** – Automatically falls back to OCR, handles API failures, and logs key debug info.
 
@@ -21,13 +23,12 @@ This project is a full-stack application that connects to a user's Gmail account
 
 - **Frontend**: Next.js (App Router)
 - **Backend**: Next.js API routes
-- **AI**: Gemini 1.5 Pro via Generative Language API
+- **AI**: Gemini 1.5 Pro via Generative Language API and ollama mistral as fallback.
 - **OCR**: Tesseract.js
 - **PDF Parsing**: pdf-parse
 - **Auth**: Firebase Auth + Google Sign-In
 - **Database**: Firebase Firestore
 - **Email Integration**: Gmail API (Google OAuth2) , Imap and smtp connections.
-
 ---
 
-add also that there are smtp and imap connectivity in settings page. once user is authenticated via gmail they can either sync their gmail invoices or use imap or smpt 
+
