@@ -8,6 +8,7 @@ This project is a full-stack application that connects to a user's Gmail account
 
 - 🔐 **Google OAuth2 Integration** – Securely connect and access Gmail inbox.
 - 📬 **Gmail API Access** – Fetch emails with invoice-related PDF attachments.
+- 📬**IMAP and SMTP** – Fetch emails with invoice-related PDF attachments.
 - 📄 **PDF Text Extraction** – Uses `pdf-parse` to extract text from standard PDFs.
 - 🔍 **OCR Fallback with Tesseract.js** – Handles image-only scanned invoices.
 - 🧠 **Google Gemini 1.5 Pro** – Parses invoice text into structured JSON.
@@ -25,7 +26,7 @@ This project is a full-stack application that connects to a user's Gmail account
 - **PDF Parsing**: pdf-parse
 - **Auth**: Firebase Auth + Google Sign-In
 - **Database**: Firebase Firestore
-- **Email Integration**: Gmail API (Google OAuth2)
+- **Email Integration**: Gmail API (Google OAuth2) , Imap and smtp connections.
 
 ---
 
